@@ -72,7 +72,7 @@ public class EmployeeService {
         dynamoDBMapper = new DynamoDBMapper(client);
     }
 
-
+// api response function
     private APIGatewayProxyResponseEvent createApiResponse(String body , int statusCode , Map<String , String> header){
         APIGatewayProxyResponseEvent responseEvent = new APIGatewayProxyResponseEvent();
         responseEvent.setBody(body);
