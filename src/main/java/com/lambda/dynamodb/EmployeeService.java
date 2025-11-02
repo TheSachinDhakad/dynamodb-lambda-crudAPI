@@ -64,6 +64,7 @@ public class EmployeeService {
         }
     }
 
+    // db init function
     private void intiDynamoDB() {
         AmazonDynamoDB client = AmazonDynamoDBAsyncClientBuilder.standard()
                 .withRegion("ap-south-1")  // ✅ Must match DynamoDB region
